@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Prompting the user for input
+let inputString = prompt("Enter a string:");
+let searchString = prompt("Enter a substring to search for:");
+let replacementString = prompt("Enter a replacement substring:");
+
+// Using the replace() method to replace all occurrences of searchString with replacementString
+let modifiedString = inputString.replace(new RegExp(searchString, 'g'), replacementString);
+
+// Displaying the modified string
+alert(`Original string: ${inputString}`);
+alert(`Modified string: ${modifiedString}`);
+
+    </script>
+</body>
+</html>
